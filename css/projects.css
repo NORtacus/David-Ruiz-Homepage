@@ -1,0 +1,222 @@
+ @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} 
+nav{
+  display: flex;
+  height: 80px;
+  width: 100%;
+  background: #fc7b2b;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 50px 0 100px;
+  flex-wrap: wrap;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+nav .logo{
+  width:100%; 
+  height:auto; 
+  max-width:70px;
+}
+nav .title{
+  color: #fff;
+  font-size: 35px;
+}
+nav ul{
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+nav ul li{
+  margin: 0 5px;
+}
+nav ul li a{
+  color: #f2f2f2;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 8px 15px;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+nav ul li a.active,
+nav ul li a:hover{
+  color: #111;
+  background: #fff;
+}
+nav .menu-btn i{
+  color: #fff;
+  font-size: 22px;
+  cursor: pointer;
+  display: none;
+}
+input[type="checkbox"]{
+  display: none;
+}
+@media (max-width: 1000px){
+  nav{
+    padding: 0 40px 0 50px;
+  }
+  nav .title{
+    font-size: 30px;
+
+  }
+}
+@media (max-width: 920px) {
+  nav .menu-btn i{
+    display: block;
+  }
+  #click:checked ~ .menu-btn i:before{
+    content: "\f00d";
+  }
+  nav ul{
+    position: fixed;
+    top: 80px;
+    left: -100%;
+    background: #fc7b2b;
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    display: block;
+    transition: all 0.3s ease;
+  }
+  #click:checked ~ ul{
+    left: 0;
+  }
+  nav ul li{
+    width: 100%;
+    margin: 40px 0;
+  }
+  nav ul li a{
+    width: 100%;
+    margin-left: -100%;
+    display: block;
+    font-size: 20px;
+    transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  #click:checked ~ ul li a{
+    margin-left: 0px;
+  }
+  nav ul li a.active,
+  nav ul li a:hover{
+    background: none;
+    color: black;
+  }
+}
+main {
+  padding: 2rem;
+}
+
+
+
+
+
+
+
+
+
+.box-grid {
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 1.5rem;
+  justify-items: center;
+  padding: 0px;
+}
+.box-flex {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: flex-start;
+  justify-content: center;
+  padding: .5rem;
+  text-align: center;
+  font-size: 1.2rem;
+  background-color: #333333;
+  color: #d9d9d9;
+}
+.box-flex-center-left {
+  align-items: center;
+  justify-content: flex-start;
+}
+.box-img {
+  transition: -webkit-transform .5s ease-in-out;
+  transition: transform .5s ease-in-out;
+  object-fit: fill;
+  width:319px;
+  height:509px;
+}
+.box-img:hover {
+  -webkit-transform: scale(1.07);
+  transform: scale(1.07);
+}
+.box-caption {
+  position: absolute;
+  max-width: 195px;
+  margin: 0;
+  padding: .3rem;
+  font-size: 1.25rem;
+  background-color: rgba(0, 69, 98, 0.3);
+  color: #f2f2f2;
+  border-radius: 0px 23px 23px 0px;
+}
+
+
+
+
+
+.box-grid i{
+  color:white;
+}
+
+
+
+
+
+
+.footer {
+  background-color: #fc7b2b;
+  color: white;
+}
+.footer .content {
+  display: flex;
+  justify-content: space-evenly;
+}
+.footer .content p {
+  margin-bottom: 0.7rem;
+}
+.footer .content a {
+  color: white;
+  text-decoration: none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.footer .content a:hover {
+  border-bottom: 1px solid white;
+}
+.footer .content h4 {
+  margin-bottom: 0.8rem;
+  font-size: 17px;
+}
+footer {
+  text-align: center;
+}
+footer hr {
+  margin: 1.8rem 0;
+}
+.logo-footer {
+  height: 101px;
+  width: 91px;
+  border-radius: 3px;
+}
+@media (max-width: 580px) {
+  .footer .content {
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+  }
+  .top-left {
+    font-size: 19px;
+  }
+}

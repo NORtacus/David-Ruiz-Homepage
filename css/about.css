@@ -1,0 +1,279 @@
+ @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} 
+nav{
+  display: flex;
+  height: 80px;
+  width: 100%;
+  background: #fc7b2b;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 50px 0 100px;
+  flex-wrap: wrap;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+nav .logo{
+  width:100%; 
+  height:auto; 
+  max-width:70px;
+}
+nav .title{
+  color: #fff;
+  font-size: 35px;
+}
+nav ul{
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+nav ul li{
+  margin: 0 5px;
+}
+nav ul li a{
+  color: #f2f2f2;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 8px 15px;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+nav ul li a.active,
+nav ul li a:hover{
+  color: #111;
+  background: #fff;
+}
+nav .menu-btn i{
+  color: #fff;
+  font-size: 22px;
+  cursor: pointer;
+  display: none;
+}
+input[type="checkbox"]{
+  display: none;
+}
+@media (max-width: 1000px){
+  nav{
+    padding: 0 40px 0 50px;
+  }
+  nav .title{
+    font-size: 30px;
+
+  }
+}
+@media (max-width: 920px) {
+  nav .menu-btn i{
+    display: block;
+  }
+  #click:checked ~ .menu-btn i:before{
+    content: "\f00d";
+  }
+  nav ul{
+    position: fixed;
+    top: 80px;
+    left: -100%;
+    background: #fc7b2b;
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    display: block;
+    transition: all 0.3s ease;
+  }
+  #click:checked ~ ul{
+    left: 0;
+  }
+  nav ul li{
+    width: 100%;
+    margin: 40px 0;
+  }
+  nav ul li a{
+    width: 100%;
+    margin-left: -100%;
+    display: block;
+    font-size: 20px;
+    transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  #click:checked ~ ul li a{
+    margin-left: 0px;
+  }
+  nav ul li a.active,
+  nav ul li a:hover{
+    background: none;
+    color: black;
+  }
+}
+main {
+  padding: 2rem;
+}
+
+
+
+
+
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2%;
+}
+.flex-item-left {
+  background-color: #f1f1f1;
+  padding: 10px;
+  flex: 50%;
+  font-size: 17px;
+  text-align: left;
+}
+.flex-item-right {
+  font-size: 17px;
+  background-color: #fff3ea;
+  padding: 10px;
+  flex: 50%;
+  text-align: center;
+}
+.flex_text_right {
+  flex: 50%;
+  font-size: 14px;
+}
+.flex_text_left {
+  flex: 50%;
+  font-size: 14px;
+}
+.images-large{
+  border-radius: 11px;
+  margin: 5px;
+  width: 95%;
+  height: auto;
+  cursor: pointer;
+}
+.images-larger {
+  width: 50%;
+  height: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  z-index: 2;
+  transition: width 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 930px) {
+  .flex_container {
+    display:block;
+  }
+  .flex_item_right {
+    width: 100%;
+  }
+  .flex_item_left {
+  width: 100%;
+ }
+ .flex_text_right {
+  width: 100%;
+}
+.flex_text_left {
+width: 100%;
+}
+}
+
+.box-img{
+width: 100%;
+}
+.box-img:hover {
+-webkit-transform:scale(1.1);
+transform:scale(1.1);
+transition: 0.2s;
+}
+/* contact */
+form {
+width: 450px;
+background: #fff;
+padding: 15px 40px 40px;
+border: 1px solid #ccc;
+margin: 50px auto 0;
+border-radius: 5px;
+}
+label{
+margin-bottom: 55px;
+}
+.error {
+color: red;
+font-size: 85%;
+margin-top: -10px;
+margin-bottom: 10px;
+}
+input[type=text], textarea {
+width: 100%;
+padding: 11px;
+border: 1px solid #ccc;
+border-radius: 4px;
+margin-bottom: 15px;
+resize: vertical;
+}
+input[type="submit"] {
+  font-weight: 100;
+  background: #01363B;
+  color: #fff;
+  margin-top: 10px;
+  cursor: pointer;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+}
+input[type="submit"]:hover {
+  background: #47836c;
+}
+
+
+
+
+
+.footer {
+  background-color: #fc7b2b;
+  color: white;
+}
+.footer .content {
+  display: flex;
+  justify-content: space-evenly;
+}
+.footer .content p {
+  margin-bottom: 0.7rem;
+}
+.footer .content a {
+  color: white;
+  text-decoration: none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+.footer .content a:hover {
+  border-bottom: 1px solid white;
+}
+.footer .content h4 {
+  margin-bottom: 0.8rem;
+  font-size: 17px;
+}
+footer {
+  text-align: center;
+}
+footer hr {
+  margin: 1.8rem 0;
+}
+.logo-footer {
+  height: 101px;
+  width: 91px;
+  border-radius: 3px;
+}
+@media (max-width: 580px) {
+  .footer .content {
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+  }
+  .top-left {
+    font-size: 19px;
+  }
+}

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+   <head>
+      <link type="text/css" rel="stylesheet" href="css/about.css" /> 
+      <link rel="icon" type="image/x-icon" href="images/computer.jpg">
+      <script src="https://kit.fontawesome.com/a5cb12cc4e.js" crossorigin="anonymous"></script>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="description" content="Welcome to my homepage! - About & Contact">
+      <meta name="keywords" content="David, Ruiz, homepage, webpage, about, programming, html, css, javascript, projects, portofolio, design, school">
+      <meta name="author" content="David Ruiz">
+      <title>David Ruiz Homepage - About & Contact</title>
+   </head>
+   <body>
+    <header>
+      <nav>
+         <div class="title">
+            <a href=index.html><img src="images/favicon.png" alt="logo" class="logo"></a>
+         </div>
+         <div class="title">
+          David Ruiz Homepage
+       </div>
+         <input type="checkbox" id="click">
+         <label for="click" class="menu-btn">
+         <i class="fas fa-bars"></i>
+         </label>
+         <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a class="active" href="about.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="about.html">Contact </a></li>
+         </ul>
+      </nav>
+    </header>
+    <main>
+
+
+
+      <body>
+
+        <div class="first-heading"><h3><i>About me, my webpage and contact page:</i></h3></div>
+    
+    <div class="flex-container">
+     <div class="flex-item-left">
+      <div class="first-heading"><h3>About</h3></div>
+      <br>
+      <h4>I have always liked creating things, preferably in the creative corner. That is why I have chosen to study frontend. There I can design a great 
+      and presentable website or app for the benefit of the users. Combining colors, composition and fonts to get a simple and user-friendly product is 
+      important. It should not be too complicated, but simple and stylish. It's so great to see the finished product after many hours of work, then you 
+      get real self-achievement!</h4>
+    <br>
+    <br>
+      <div class="first-heading"><h3>My interest in computers</h3></div>
+      <br>
+      <h4>I think that when you work in data it is very good to be interested in the subject. I have always been interested in technology and 
+      especially in my childhood I started collecting old computers that people would throw away. Either I got them for free or I paid a small sum 
+      for them, but today they are worth a pretty big sum! They have more of an affective value for me where I think it is important to take care of 
+      historical things. Computer technology develops quickly and it is important to be up to date with the latest fashion!</h4>
+    
+     <div class="flex-container">
+      <div class="flex_text_right">
+        <div class="image-container">
+           <img src="images/computer_collection.jpg" alt="Sony A58 Camera" class="images-large" onclick="biggerImage(this)">
+           <p><i>Some of the computers from my computer collection. The oldest date back to 1978!</i></p>
+        </div>
+      </div>
+      <div class="flex_text_left">
+        <div class="image-container">
+           <img src="images/frontend_logo.png" alt="Sony A58 camera front" class="images-large" onclick="biggerImage(this)">
+           <p><i>HTML, CSS and Javascript are the main program languages in front-end dev.</i></p>
+        </div>
+       </div>
+      </div>
+    </div>
+     
+    
+      <div class="flex-item-right">
+      <form name="contactForm" onsubmit="return validateForm()" action="submitmessage.html" method="post">
+        <h3>Contact me!</h3>
+        <br>
+        <i><p>- Useful information related to programming or design.</p>
+        <p>- Input to my website.</p>
+        <p>- Want me for assignments.</p></i>
+        <br>
+        <div class="row">
+            <label>Name</label>
+            <input type="text" name="name" placeholder="Your name..">
+            <div class="error" id="nameErr"></div>
+        </div>
+        <div class="row">
+            <label>Email</label>
+            <input type="text" name="email" placeholder="Email..">
+            <div class="error" id="emailErr"></div>
+        </div>
+        <div class="row">
+          <label>Subject</label>
+          <input type="text" name="subject" placeholder="Subject..">
+          <div class="error" id="subjectErr"></div>
+      </div>
+        <div class="row">
+            <label>Message</label>
+            <textarea id="text" name="message" placeholder="Your message.." style="height:130px"></textarea>
+            <div class="error" id="messageErr"></div>
+        </div>
+        <div class="row">
+            <input type="submit" value="Submit">
+        </div>
+       </form>
+      </div>
+    </div>
+    
+    
+    </body>
+<br>
+    </main>
+    <footer>
+        <div class="footer">
+          <br>
+            <div class="content">
+              <div class="footer-logo">
+                <img src="images/cat-computer.gif" class="logo-footer" alt="cat-programmer">
+              </div>
+              <div class="social-media">
+                <h4>Social</h4>
+                <p><a href="https://linktr.ee/nortacus"><i class="fa-solid fa-tree">&nbsp;&nbsp;</i>Linktr.ee</a></p>
+                <p><a href="#"><i class="fa-brands fa-linkedin-in">&nbsp;&nbsp;</i>LinkedIn</a></p>
+                <p><a href="https://github.com/NORtacus"><i class="fa-brands fa-github">&nbsp;&nbsp;</i>GitHub</a></p>
+              </div>
+              <div class="links">
+                <h4>Quick links</h4>
+                <p><a href="index.html">Home</a></p>
+                <p><a href="about.html">About</a></p>
+                <p><a href="about.html">Contact</a></p>
+              </div>
+              <div>
+                <img src="images/design.png" class="logo-footer" alt="design module">
+                <p>©2024 David’s Homepage</p> 
+             </div>
+           </div>
+         </footer>
+<script src="js/largerImage.js"></script>
+<script src="js/contact.js"></script>
+</html>
