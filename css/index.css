@@ -106,9 +106,21 @@ input[type="checkbox"]{
     color: black;
   }
 }
-@media (max-width: 700px){
+@media (max-width: 800px){
+  nav .title{
+    font-size: 27px;
+
+  }
+}
+@media (max-width: 630px){
   nav .title{
     font-size: 17px;
+
+  }
+}
+@media (max-width: 450px){
+  nav .title{
+    font-size: 13px;
 
   }
 }
