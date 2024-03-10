@@ -246,6 +246,11 @@ input[type="submit"] {
 input[type="submit"]:hover {
   background: #47836c;
 }
+@media (max-width: 610px){
+  form{
+    width: 339px;
+  }
+}
 
 
 
